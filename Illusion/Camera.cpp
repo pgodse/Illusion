@@ -92,7 +92,7 @@ void Camera::addObject(Object *obj) {
     sceneObjects.push_back(obj);
 }
 
-glm::vec3 lightPos = glm::vec3(0.0, -3.5, -1.2);
+glm::vec3 lightPos = glm::vec3(0.0, 1.0, 0.0);
 
 void Camera::renderCamera() {
     //Build a full screen quad

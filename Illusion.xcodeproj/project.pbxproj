@@ -21,6 +21,8 @@
 		0D615C0D1D53E7C4007D8E2C /* Material.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0D615C0B1D53E7C4007D8E2C /* Material.cpp */; };
 		0D615C101D54D55D007D8E2C /* Texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0D615C0E1D54D55D007D8E2C /* Texture.cpp */; };
 		0D615C191D54D896007D8E2C /* textures in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0D615C181D54D892007D8E2C /* textures */; };
+		0D69301F1D8790A3005124F5 /* ReflectVertex.frag in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0D69301D1D879089005124F5 /* ReflectVertex.frag */; };
+		0D6930201D8790A3005124F5 /* ReflectFragment.frag in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0D69301E1D879096005124F5 /* ReflectFragment.frag */; };
 		0D7BFCBE1AC84C3600323D47 /* shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0D7BFCBC1AC84C3600323D47 /* shader.cpp */; };
 		0D7BFCC51AC8539300323D47 /* SimpleFragmentShader.frag in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0D7BFCBF1AC84CB000323D47 /* SimpleFragmentShader.frag */; };
 		0D7BFCC61AC8539300323D47 /* SimpleVertexShader.frag in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0D7BFCC01AC84CB000323D47 /* SimpleVertexShader.frag */; };
@@ -39,6 +41,8 @@
 			dstPath = usr/share/man/man1;
 			dstSubfolderSpec = 7;
 			files = (
+				0D69301F1D8790A3005124F5 /* ReflectVertex.frag in CopyFiles */,
+				0D6930201D8790A3005124F5 /* ReflectFragment.frag in CopyFiles */,
 				0D06C7D21D56B6C60093FA50 /* cube.obj in CopyFiles */,
 				0D615C191D54D896007D8E2C /* textures in CopyFiles */,
 				0D06C7CB1D4D447F0093FA50 /* QuadVertex.frag in CopyFiles */,
@@ -83,6 +87,8 @@
 		0D615C0E1D54D55D007D8E2C /* Texture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Texture.cpp; sourceTree = "<group>"; };
 		0D615C0F1D54D55D007D8E2C /* Texture.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Texture.hpp; sourceTree = "<group>"; };
 		0D615C181D54D892007D8E2C /* textures */ = {isa = PBXFileReference; lastKnownFileType = folder; path = textures; sourceTree = "<group>"; };
+		0D69301D1D879089005124F5 /* ReflectVertex.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ReflectVertex.frag; sourceTree = "<group>"; };
+		0D69301E1D879096005124F5 /* ReflectFragment.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ReflectFragment.frag; sourceTree = "<group>"; };
 		0D7BFCBC1AC84C3600323D47 /* shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = shader.cpp; sourceTree = "<group>"; };
 		0D7BFCBD1AC84C3600323D47 /* shader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = shader.hpp; sourceTree = "<group>"; };
 		0D7BFCBF1AC84CB000323D47 /* SimpleFragmentShader.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = SimpleFragmentShader.frag; sourceTree = "<group>"; };
@@ -748,6 +754,8 @@
 				0D06C7CD1D4E8B850093FA50 /* PostProcFragment.frag */,
 				0D06C7CF1D567FB30093FA50 /* SkyboxVertex.frag */,
 				0D06C7D01D5681450093FA50 /* SkyboxFrag.frag */,
+				0D69301D1D879089005124F5 /* ReflectVertex.frag */,
+				0D69301E1D879096005124F5 /* ReflectFragment.frag */,
 				0D7BFDD11AC8754F00323D47 /* vec4.hpp */,
 				0D7BFCBC1AC84C3600323D47 /* shader.cpp */,
 				0D7BFCBD1AC84C3600323D47 /* shader.hpp */,

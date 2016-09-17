@@ -136,11 +136,11 @@ void Material::applyMaterial() {
             //Bind the texture buffer
             glBindTexture(GL_TEXTURE_2D, pair.first->textureId);
             //Apply the uniform
-            glUniform1i(pair.second, 0);
+            glUniform1i(pair.second, tex);
         }
         else if (pair.first->type == Texture::CUBE_MAP) {
             glBindTexture(GL_TEXTURE_CUBE_MAP, pair.first->textureId);
-            glUniform1i(pair.second, 0);
+            glUniform1i(pair.second, tex);
         }
         tex++;
     }

@@ -93,9 +93,27 @@ void buildScene() {
     object2->baseColor = glm::vec4(0.3, 0.34, 0.25, 1.0);
     camera->addObject(object2);
     
-    Object *object3 = new Object(shaderProgram);
+    
+    // Teapot object
+    GLuint reflectProgram = LoadShaders("ReflectVertex.frag", "ReflectFragment.frag");
+    
+    std::vector<std::string> envList;
+    
+    envList.push_back("textures/ss_rt.tga");
+    envList.push_back("textures/ss_lf.tga");
+    envList.push_back("textures/ss_up.tga");
+    envList.push_back("textures/ss_dn.tga");
+    envList.push_back("textures/ss_bk.tga");
+    envList.push_back("textures/ss_ft.tga");
+    Texture *envexture = new Texture(envList);
+    
+    Material *teapotMaterial = new Material(reflectProgram);
+    teapotMaterial->addUniformTexture("envMap", envexture);
+    
+    Object *object3 = new Object(reflectProgram);
+    object3->material = teapotMaterial;
     object3->initGeometry("teapot.obj");
-    object3->modelMatrix = glm::translate(object3->modelMatrix, glm::vec3(0, 1.0, 0.0));
+    object3->modelMatrix = glm::translate(object3->modelMatrix, glm::vec3(0, 1.0, 1.0));
     object3->modelMatrix = glm::scale(object3->modelMatrix, glm::vec3(0.09, 0.09, 0.09));
 //    object3->modelMatrix = glm::rotate(object3->modelMatrix, (float)180.5, glm::vec3(1,0,0));
     

@@ -96,7 +96,6 @@ void Object::setProjectionViewMatrix(glm::mat4 projMat, glm::mat4 viewMat) {
 }
 
 
-
 void Object::drawObject() {
     //Compute model matrix
     glm::mat4 modelViewMatrix = _projView * modelMatrix;
@@ -178,7 +177,9 @@ void Object::drawObject() {
 void Object::drawObjectType(std::string type) {
     if(skybox) return;
     
-    glCullFace(GL_FRONT);
+    glCullFace(GL_BACK);
+    glEnable(GL_DEPTH);
+    glDepthMask(GL_TRUE);
     // 1st attribute buffers : vertex
     glEnableVertexAttribArray(0);
     glBindBuffer(GL_ARRAY_BUFFER, vertexBuffer);
